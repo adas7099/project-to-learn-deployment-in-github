@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+.inv {
+    display: none;
+}
+    </style>
+    <body>
+        <span>
+            <a href="home.html">Home</a>
+            <a href="">Routine</a>
+        </span>
+        <br>
+        <select id="target">
+            <option value="">Select...</option>
+            <option value="content_1">Weekdays(WFH)</option>
+            <option value="content_2">Weekdays(office)</option>
+            <option value="content_3">Sunday/Saturday/Holiday/Leave</option>
+        <select>
+            <br><br>
+        <div id="content_1" class="inv">
+        <h3>Weekdays(WFH)</h3>
+        <h4>A</h4>
+        <ol>
+            <li>(30mins video) or 50 qs</li>
+        </ol>
+        <h4>B</h4>
+        <ol>
+            <li>If A is 30mins video then 30 qs</li>
+            <li>2pomo apti or math</li>
+            <li>20mins exercise</li>
+        </ol>
+        </div>
+        <div id="content_2" class="inv">
+        <h3>Weekdays(office)</h3>
+        <h4>A</h4>
+        <ol>
+            <li>1/2hr video or 20 qs</li>
+        </ol>
+        <h4>B</h4>
+        <ol>
+            <li>2pomo apti or math</li>
+            <li>20mins exercise</li>
+        </ol>
+        </div>
+       
+        <div id="content_3" class="inv">
+        <h3>Sunday/Saturday/Holiday/Leave</h3>
+        <h4>A</h4>
+        <ol>
+            <li>(2hr video+7pomo) or subj study 7hr(14 pomo)</li>
+        </ol>
+        <h4>B</h4>
+        <ol>
+            <li>2pomo apti or math</li>
+            <li>20mins exercise</li>
+        </ol>
+        </div>
+        
+        <script>
+            document
+                .getElementById('target')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv';
+                    }
+                    if (target !== null ) {
+                        target.className = 'vis';
+                    }
+            });
+        </script>
+    </body>
+</html>
