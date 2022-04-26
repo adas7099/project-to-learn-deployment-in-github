@@ -1,10 +1,48 @@
 <html>
-  <head> </head>
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
   <body>
     <span>
-      <a href="home.html">Routine</a>
+      <a href="home.html">Home</a>
       <a href="index.html">Rules</a>
       <a href="index.html">Law</a>
     </span>
+    <br />
+    <select id="target">
+      <option value="">Select...</option>
+      <option value="content_1">Weekdays(WFH)</option>
+      <option value="content_2">Weekdays(office)</option>
+      <option value="content_3">Sunday/Saturday/Holiday/Leave</option>
+    </select>
+    <br /><br />
+    <div id="content_1" class="inv">
+      <table>
+        <tr>
+          <th>Time</th>
+          <th>Work</th>
+        </tr>
+        <tr>
+          <td>6:30Am</td>
+          <td>Wake Up</td>
+        </tr>
+        <tr>
+          <td>6:30Am-7:00Am</td>
+          <td>Morning dos</td>
+        </tr>
+        <tr>
+          <td>7:00Am-10:00am</td>
+          <td>Study</td>
+        </tr>
+      </table>
+    </div>
+    <div id="content_2" class="inv"></div>
+    <div id="content_3" class="inv"></div>
   </body>
 </html>
